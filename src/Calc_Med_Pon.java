@@ -31,16 +31,13 @@ public class Calc_Med_Pon {
         System.out.println("Qual o valor do Peso 3?");
         pesoNota3 = leitor.nextDouble();
 
+        calcularMediaPonderadaDoAluno();
 
 
 
 
     }
 
-    public class MediaEscolar() {
-
-
-    }
     public void calcularMediaPonderadaDoAluno(){
 
         System.out.println("Calculando a média do aluno...");
@@ -49,18 +46,18 @@ public class Calc_Med_Pon {
         double somaPesoDasNotas = pesoNota1 + pesoNota2 + pesoNota3;
         mediaFinal = somaNotasVersusPeso / somaPesoDasNotas;
 
-
+        exibirMediaFinalDoAluno();
 
 
 
 
     }
-    public void ExibirMediaFinalDoAluno() {
+    public void exibirMediaFinalDoAluno() {
 
         System.out.println();
         System.out.println("MEDIA FINAL DO ALUNO");
         System.out.println("A média ponderada do(a) aluno(a)" + nomeAluno + " é:" + mediaFinal);
-
+        System.out.println("-------------------------");
 
 
     }
